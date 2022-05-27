@@ -3,8 +3,8 @@
 }
 
 .body{
-    font-family: sans-serif;
-    background-color: #fcfcfc;
+    font-family: 'Roboto', sans-serif;;
+    background-color: #fff;
 }
 
 ul, h1, h2, div, p, body{
@@ -14,4 +14,9 @@ ul, h1, h2, div, p, body{
 
 a{
     text-decoration: none;
+}
+
+:root {
+    --bg-color-hover: #262626;
+    --bg-color-active: #57AD56;
 }
