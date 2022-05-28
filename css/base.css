@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.body{
+body{
     font-family: 'Roboto', sans-serif;;
     background-color: #fff;
 }
@@ -17,6 +17,13 @@ a{
 }
 
 :root {
-    --bg-color-hover: #262626;
-    --bg-color-active: #57AD56;
+    --text-color-nav: #626262;
+    --text-color: #1D1D1D;
+    --bg-color-main: #fff;
+    --bg-color-active: #262626;
+    --bg-color-hover: #57AD56;
+    --font-size: 36px;
+    --font-size-mob: 24px;
+    --font-weight-min: 400;
+    --font-weight-max: 500;
 }

@@ -22,23 +22,88 @@
 }
 
 .header__btn:hover {
-    display: inline-block;
-    width: 72px;
-    height: 40px;
-    border-radius: 2px;
-    color: #fff;
+    color: var(--bg-color-main);
     background-color: var(--bg-color-hover);
-}
-
-.header__btn:active {
-    color: #fff;
-    background-color: var(--bg-color-active);
     cursor: pointer;
     border: none;
 }
 
+.header__btn:active {
+    display: inline-block;
+    width: 72px;
+    height: 40px;
+    border-radius: 2px;
+    color: var(--bg-color-main);
+    background-color: var(--bg-color-active);
+}
+
 .header__basket {
     display: none;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.main__title {
+  position: relative;
+  width: 100%;
+  height: 256px;
+  background-image: url("../assets/title-mob.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  position: absolute;
+  top: 131px;
+  left: 8px;
+  width: 308px;
+  height: 180px;
+  text-align: center;
+  padding-top: 24px;
+  font-weight: var(--font-weight-min);
+  font-size: var(--font-size-mob);
+  line-height: 28px;
+  border-radius: 2px;
+  color: var(--text-color);
+  background-color: var(--bg-color-main);
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-bottom: 24px;
+}
+
+.card__text {
+  font-weight: var(--font-weight-min);
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-color-nav);
+  margin-bottom: 16px;
+}
+
+.card__min {
+  width: 98px;
+  height: 32px;
+  background: var(--bg-color-active);
+  border-radius: 16px;
+  font-weight: var(--font-weight-min);
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: var(--bg-color-main);
+  padding-top: 9px;
+}
+
+.main__nav {
+  display: none;
 }
 
 @media (min-width: 1124px) {
@@ -52,12 +117,53 @@
 
     .header__basket {
         display: initial; 
+        width: 24px;
+        height: 25px;
         margin-left: 13px;
+        background-image: url("../assets/basket1.svg");
+        background-repeat: no-repeat;
     }
 
-    .header__basket:active {
-        fill: #57AD56;
+    .header__basket:hover {
+        background-image: url("../assets/basket.svg");
         cursor: pointer;
+    }
+
+    .main__title {
+      height: 364px;
+      background-image: url("../assets/title-desctop.png");
+    }
+
+    .card {
+      width: 389px;
+      height: 204px;
+      top: 80px;
+      left: 81px;
+      font-size: var(--font-size);
+    }
+
+    .card__container {
+      flex-direction: row;
+      padding: 62px 32px 38px 38px;
+    }
+
+    .main__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 438px 29px 81px;
+    }
+
+    .main__nav-items {
+      font-weight: var(--font-weight-min);
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--text-color-nav);
+    }
+
+    .main__nav-items:hover {
+      color: var(--bg-color-hover)
     }
 }
 
@@ -72,11 +178,52 @@
 
     .header__basket {
         display: initial; 
+        width: 24px;
+        height: 25px;
         margin-left: 11px;
+        background-image: url("../assets/basket1.svg");
+        background-repeat: no-repeat;
     }
 
-    .header__basket:active {
-        fill: #57AD56;
+    .header__basket:hover {
+        background-image: url("../assets/basket.svg");
         cursor: pointer;
+    }
+
+    .main__title {
+      height: 364px;
+      background-image: url("../assets/title-tablet.png");
+    }
+
+    .card {
+      width: 432px;
+      height: 204px;
+      top: 80px;
+      font-size: var(--font-size);
+    }
+
+    .card__container {
+      flex-direction: row;
+      padding: 62px 32px 38px 48px;
+    }
+
+    .main__nav {
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 155px 29px 8px;
+    }
+
+    .main__nav-items {
+      font-weight: var(--font-weight-min);
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--text-color-nav);
+    }
+
+    .main__nav-items:hover {
+      color: var(--bg-color-hover)
     }
 }
