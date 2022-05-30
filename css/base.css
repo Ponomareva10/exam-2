@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+ul,
+ol,
+i,
+h1,
+h2,
+h3,
+h4,
+h5,
+hr,
+div,
+p,
+nav,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --text-color-nav: #626262;
+  --text-color: #1d1d1d;
+  --bg-color-main: #fff;
+  --bg-color-menu: #e5e5e5;
+  --bg-color-menu-hover: #757575;
+  --bg-color-active: #262626;
+  --bg-color-hover: #57ad56;
+  --font-size: 36px;
+  --font-size-mob: 24px;
+  --font-weight-min: 400;
+  --font-weight-max: 500;
+}
