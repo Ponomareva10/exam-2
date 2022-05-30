@@ -106,6 +106,117 @@
   display: none;
 }
 
+.menu {
+  width: 100%;
+  height: 933px;
+  padding: 111px 4px 40px 8px;
+  background-color: var(--bg-color-main);
+}
+
+.menu__title {
+  font-weight: var(--font-weight-min);
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.menu__image {
+  text-align: center;
+}
+
+.menu__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 16px;
+  padding: 41px 0;
+}
+
+.info {
+  width: 100%; 
+  height: 102px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-color-menu);
+  border-bottom: 1px solid #757575;
+}
+
+.info:hover {
+  background-color: var(--bg-color-menu-hover);
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info__text-name {
+  font-weight: var(--font-weight-min);
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.info__text-composition {
+  font-weight: var(--font-weight-min);
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--text-color-nav);
+  margin-bottom: 30px;
+}
+
+.info__text-price {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+
+.info__image {
+  width: 102px;
+  height: 102px;
+  border-radius: 2px;
+}
+
+.image--herring {
+  background-image: url("../assets/herring-mob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image--pickles {
+  background-image: url("../assets/pickles-mob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image--mushrooms {
+  background-image: url("../assets/mushrooms-mob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image--fat {
+  background-image: url("../assets/fat-mob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image--salmon {
+  background-image: url("../assets/salmon-mob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image--tonque {
+  background-image: url("../assets/tonque-mob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 1124px) {
     .header {
         padding: 16px 97px 16px 81px;
@@ -144,7 +255,9 @@
 
     .card__container {
       flex-direction: row;
-      padding: 62px 32px 38px 38px;
+      justify-content: center;
+      margin-top: 0;
+      padding: 82px 32px 38px 38px;
     }
 
     .main__nav {
@@ -164,6 +277,75 @@
 
     .main__nav-items:hover {
       color: var(--bg-color-hover)
+    }
+
+    .menu {
+      height: 780px;
+      padding: 56px 87px 80px 81px;
+    }
+
+    .menu__title {
+      text-align: start;
+    }
+
+    .menu__image {
+      display: none;
+    }
+
+    .menu__container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      row-gap: 49px;
+      column-gap: 16px;
+      padding: 41px 0;
+    }
+    
+    .info {
+      width: 100%; 
+      height: 160px;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid rgba(117, 117, 117, 0.2);
+      border-radius: 2px;
+    }
+
+    .info__text {
+      padding: 16px;
+    }
+
+    .info__text-name {
+      font-size: 16px;
+    }
+
+    .info__image {
+      width: 170px;
+      height: 157px;
+    }
+
+    .image--herring {
+      background-image: url("../assets/herring-desctop.png");
+    }
+
+    .image--pickles {
+      background-image: url("../assets/pickles-desctop.png");
+    }
+
+    .image--mushrooms {
+      background-image: url("../assets/mushrooms-desctop.png");
+    }
+
+    .image--fat {
+      background-image: url("../assets/fat-desctop.png");
+    }
+
+    .image--salmon {
+      background-image: url("../assets/salmon-desctop.png");
+    }
+
+    .image--tonque {
+      background-image: url("../assets/tonque-desctop.png");
     }
 }
 
@@ -204,7 +386,8 @@
 
     .card__container {
       flex-direction: row;
-      padding: 62px 32px 38px 48px;
+      margin-top: 0;
+      padding: 82px 32px 38px 48px;
     }
 
     .main__nav {
@@ -224,6 +407,74 @@
     }
 
     .main__nav-items:hover {
-      color: var(--bg-color-hover)
+      color: var(--bg-color-hover);
+    }
+
+    .menu {
+      height: 1290px;
+      padding: 56px 8px 48px 8px;
+    }
+
+    .menu__title {
+      text-align: start;
+    }
+
+    .menu__image {
+      display: none;
+    }
+
+    .menu__container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      row-gap: 32px;
+      padding: 41px 0;
+    }
+    
+    .info {
+      width: 100%; 
+      height: 160px;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid rgba(117, 117, 117, 0.2);
+      border-radius: 2px;
+    }
+
+    .info__text {
+      padding: 16px 24px;
+    }
+
+    .info__text-name {
+      font-size: 16px;
+    }
+
+    .info__image {
+      width: 200px;
+      height: 157px;
+    }
+
+    .image--herring {
+      background-image: url("../assets/herring-tablet.png");
+    }
+
+    .image--pickles {
+      background-image: url("../assets/pickles-tablet.png");
+    }
+
+    .image--mushrooms {
+      background-image: url("../assets/mushrooms-tablet.png");
+    }
+
+    .image--fat {
+      background-image: url("../assets/fat-tablet.png");
+    }
+
+    .image--salmon {
+      background-image: url("../assets/salmon-tablet.png");
+    }
+
+    .image--tonque {
+      background-image: url("../assets/tonque-tablet.png");
     }
 }
