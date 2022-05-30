@@ -179,6 +179,7 @@
   width: 102px;
   height: 102px;
   border-radius: 2px;
+  overflow: hidden;
 }
 
 .image--herring {
@@ -215,6 +216,63 @@
   background-image: url("../assets/tonque-mob.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.footer {
+  width: 100%;
+  height: 769px;
+  padding: 56px 8px 40px 8px;
+  background-color: var(--bg-color-active);
+}
+
+.footer__logo {
+  width: 191px;
+  height: 20px;
+  background-image: url("../assets/footer-logo.png");
+  background-size: cover;
+  margin-bottom: 41px;
+}
+
+.footer__nav {
+  width: 100%;
+  height: 492px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
+}
+
+.icon__language {
+  margin: 32px 0;
+}
+
+.icon__social {
+  margin-bottom: 44px;
+}
+
+.nav-items {
+  font-weight: var(--font-weight-min);
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 23px;
+  color: var(--bg-color-main);
+}
+
+.nav-bottom {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.bottom-items {
+  font-weight: var(--font-weight-min);
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 24px;
+  color: var(--bg-color-main);
 }
 
 @media (min-width: 1124px) {
@@ -321,7 +379,7 @@
 
     .info__image {
       width: 170px;
-      height: 157px;
+      height: 160px;
     }
 
     .image--herring {
@@ -346,6 +404,41 @@
 
     .image--tonque {
       background-image: url("../assets/tonque-desctop.png");
+    }
+
+    .footer {
+      height: 443px;
+      padding: 56px 87px 52px 81px;
+    }
+
+    .footer__nav {
+      height: 220px;
+      flex-direction: row;
+    }
+
+    .nav-item {
+      margin-top: 39px;
+      margin-left: 97px;
+    }
+
+    .navigation__about {
+      margin-left: 57px;
+    }
+
+    .nav-bottom {
+      width: 100%;
+      height: 30px;
+      flex-direction: row;
+      margin-top: 40px;
+    }
+    
+    .bottom-item {
+      display: flex;
+    }
+
+    .bottom-items {
+      margin-top: 0;
+      margin-left: 205px;
     }
 }
 
@@ -451,7 +544,7 @@
 
     .info__image {
       width: 200px;
-      height: 157px;
+      height: 160px;
     }
 
     .image--herring {
@@ -476,5 +569,44 @@
 
     .image--tonque {
       background-image: url("../assets/tonque-tablet.png");
+    }
+
+    .footer {
+      height: 443px;
+      padding: 56px 8px 40px 8px;
+    }
+
+    .footer__nav {
+      height: 220px;
+      flex-direction: row;
+    }
+
+    .nav-item {
+      margin-top: 39px;
+      margin-left: 80px;
+    }
+
+    .navigation__about {
+      margin-left: 6px;
+    }
+
+    .nav-bottom {
+      width: 100%;
+      height: 30px;
+      flex-direction: row;
+      margin-top: 42px;
+    }
+    
+    .bottom-item {
+      display: flex;
+    }
+
+    .bottom-items {
+      margin-top: 0;
+      margin-left: 106px;
+    }
+
+    .bottom-items:last-of-type {
+      margin-left: 220px;
     }
 }
